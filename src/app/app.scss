@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #f9f6fd;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  height: 100vh;
+}
+.testClass{
+  background-image: url('/assets/Backgroud.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.main {
+    min-height: auto;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+mat-card {
+  animation: fadeInUp 0.4s ease both;
+}

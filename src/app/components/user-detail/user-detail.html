@@ -1,0 +1,20 @@
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<div *ngIf="!loading && user" class="user-detail">
+  <mat-card>
+    <img mat-card-image [src]="'https://i.pravatar.cc/150?img=' + user.id" alt="Avatar">
+    <mat-card-content>
+      <h2>{{ user.name }}</h2>
+      <p>Email: {{ user.email }}</p>
+      <p>ID: {{ user.id }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="goBack()">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div *ngIf="error" class="error">
+  <p>{{ error }}</p>
+  <button mat-button color="warn" (click)="goBack()">Back</button>
+</div>

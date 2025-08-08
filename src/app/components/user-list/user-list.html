@@ -1,0 +1,13 @@
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<div class="user-list-container" *ngIf="!loading">
+  <div class="card-grid">
+    <mat-card *ngFor="let user of filteredUsers" (click)="goToUser(user)" class="user-card">
+      <img mat-card-image [src]="'https://i.pravatar.cc/150?img=' + user.id" alt="Avatar" />
+      <mat-card-content>
+        <h3>{{ user.name }}</h3>
+        <p>ID: {{ user.id }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

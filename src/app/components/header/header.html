@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="logo">Our Customers Information</span>
+  <span class="spacer"></span>
+
+  <mat-form-field appearance="outline" class="search-field">
+    <mat-label>Filter by ID</mat-label>
+    <input matInput type="number" [(ngModel)]="searchId" (ngModelChange)="onSearchIdChange()" />
+  </mat-form-field>
+</mat-toolbar>

@@ -1,0 +1,41 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+mat-card {
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+mat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+mat-card-content {
+  padding: 1rem;
+  background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
+  color: #2c2c2c;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.card-grid {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+.user-card{
+  margin: 10px;
+}
+.user-list-container{
+  display: flex;
+  justify-content: center;
+}
